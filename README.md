@@ -25,7 +25,7 @@
   ### v. 01.02
   Adicionada a exibição ainda por meio de objetos, mas agora com um objeto do tipo text, que é criado e movido de forma a seguir o preço de fechamento do último tick.
 
-![Ilustração versão 01.02]()
+![Ilustração versão 01.02](https://github.com/AbraaoM/CandleCountdown/blob/master/images/demoCron.gif)
 
   É recomendável utilizar neste modo “On Price” uma fonte menor do que no modo “Big Number”.
 
