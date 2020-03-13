@@ -15,14 +15,14 @@
   ### v. 01.00
   Nesta versão a exibição é feita por meio da função Comment, ou seja, o contador aparecerá no canto superior esquerdo do gráfico.
 
-![Ilustração versão 01.00](https://github.com/AbraaoM/CandleCountdown/blob/master/images/v0.gif)
+![Ilustração versão 01.00](https://github.com/AbraaoM/CandleCountdown/blob/master/images/v0.png)
 
   Neste tipo de visualização o contador fica discreto e não interfere leitura do gráfico, embora seja de difícil leitura pelo tamanho da fonte padrão do método de exibição utilizado.
 
   ### v. 01.01
   Adicionada exibição utilizando objetos. Foi criado um objeto do tipo label e ancorado no topo superior direito, é possível editar o tamanho da fonte e a cor. Também foi adicionada a possibilidade de escolher entre os tipos de exibição, “comment”  ou “Big Number”.
 
-![Ilustração versão 01.01](https://github.com/AbraaoM/CandleCountdown/blob/master/images/v1.gif)
+![Ilustração versão 01.01](https://github.com/AbraaoM/CandleCountdown/blob/master/images/v1.png)
 
   Neste tipo de exibição o usuário pode escolher a melhor forma de visualização do contador em termos de tamanho, cor e estilo da fonte.
 
