@@ -15,17 +15,21 @@
   ### v. 01.00
   Nesta versão a exibição é feita por meio da função Comment, ou seja, o contador aparecerá no canto superior esquerdo do gráfico.
 
+![Ilustração versão 01.00](https://github.com/AbraaoM/CandleCountdown/blob/master/images/v0.gif)
+
   Neste tipo de visualização o contador fica discreto e não interfere leitura do gráfico, embora seja de difícil leitura pelo tamanho da fonte padrão do método de exibição utilizado.
 
   ### v. 01.01
   Adicionada exibição utilizando objetos. Foi criado um objeto do tipo label e ancorado no topo superior direito, é possível editar o tamanho da fonte e a cor. Também foi adicionada a possibilidade de escolher entre os tipos de exibição, “comment”  ou “Big Number”.
+
+![Ilustração versão 01.01](https://github.com/AbraaoM/CandleCountdown/blob/master/images/v1.gif)
 
   Neste tipo de exibição o usuário pode escolher a melhor forma de visualização do contador em termos de tamanho, cor e estilo da fonte.
 
   ### v. 01.02
   Adicionada a exibição ainda por meio de objetos, mas agora com um objeto do tipo text, que é criado e movido de forma a seguir o preço de fechamento do último tick.
 
-![Ilustração versão 01.02](https://github.com/AbraaoM/CandleCountdown/blob/master/images/demoCron.gif)
+![Ilustração versão 01.02](https://github.com/AbraaoM/CandleCountdown/blob/master/images/v2.gif)
 
   É recomendável utilizar neste modo “On Price” uma fonte menor do que no modo “Big Number”.
 
