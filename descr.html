@@ -1,0 +1,69 @@
+<h1><b>Introdução</b><br></h1>
+
+<p></p>
+<p style="text-align:justify;">Pessoas que realizam operações financeira em mercados financeiros muitas vezes utilizam gráficos de preços 
+para visualizar o movimento do mercado e embasar suas decisões, um tipo de gráfico comum para este fim é o gráfico de candles, esse tipo de 
+gráfico gera uma vela com indicações de preços de abertura, fechamento, máxima e mínima em um determinado período de tempo, terminado esse 
+período uma nova vela começa a ser formada. O intuito deste trabalho é criar um cronômetro que indique a quantidade de tempo restante para o 
+fechamento da vela corrente, oferecendo ao trader mais uma ferramenta que facilita a compreensão do gráfico. </p>
+
+
+<h1><b>Metodologia</b><br></h1>
+
+<p style="text-align:justify;">A função padrão OnCalculate possui entradas padronizadas que possibilitam a obtenção de algumas 
+informações do ativo negociado uma delas é a informação de hora de abertura do candle, utilizando essa informação juntamente com a do 
+período corrente no gráfico e o horário atual a contagem regressiva é calculada seguindo a seguinte equação:</p>
+<p style="text-align:justify;">HR = HAb - HAt + P</p>
+<p style="text-align:justify;">HR = Horário instantâneo para a contagem regressiva;</p>
+<p style="text-align:justify;">HAb = Horário de abertura do candle corrente;</p>
+<p style="text-align:justify;">HAt = Horário atual (último recebido pelo servidor);</p>
+<p style="text-align:justify;">P = Período corrente no gráfico em que o indicador está aplicado.</p>
+
+
+<div>
+    <br> 
+</div>
+
+
+<h1>Resultados e discussões</h1>
+<h2>v.01.00</h2>
+
+<p style="text-align:justify;">Nesta versão a exibição é feita por meio da função Comment, ou seja, o contador aparecerá no canto superior 
+esquerdo do gráfico.</p>
+<p style="text-align:center;"><br></p>
+<p style="text-align:justify;">Neste tipo de visualização o contador fica discreto e não interfere leitura do gráfico, embora seja de difícil 
+leitura pelo tamanho da fonte padrão do método de exibição utilizado.</p>
+<p style="text-align:center;">
+<img src="https://c.mql5.com/18/89/figura-v100.png" width="220" height="107" title="Exemplo v1.00" alt="Exemplo v1.00" style="vertical-align:middle;"><br></p>
+
+
+<h2>v.01.01</h2>
+
+<p>Adicionada exibição utilizando objetos. Foi criado um objeto do tipo label e ancorado no topo superior direito, é possível editar o tamanho da fonte e 
+a cor. </p>
+<p>Também foi adicionada a possibilidade de escolher entre os tipos de exibição, “comment” &nbsp;ou “Big Number”.</p>
+<p style="text-align:center;">
+<img src="https://c.mql5.com/18/89/figura-v101.png" width="531" height="189" title="Exemplo v1.01" alt="Exemplo v1.01" style="vertical-align:middle;"><br></p>
+<p style="text-align:center;"><br></p>
+
+
+<h2>v.01.02</h2>
+
+<p>Adicionada a exibição ainda por meio de objetos, mas agora com um objeto do tipo text, que é criado e movido de forma a seguir o preço de fechamento do 
+último tick.</p>
+<p style="text-align: center;">
+<img src="/data/temp/4492079/tfory4ghjy_v2.gif" width="502" height="203" title="ilustração versão 2" alt="ilustração versão 2" style="vertical-align: middle;"><br></p>
+<p></p>
+<p>É recomendável utilizar neste modo “On Price” uma fonte menor do que no modo “Big Number”.</p>
+<p>Nas exibições "Big number" e "On price" o usuário pode escolher a melhor forma de visualização do contador em termos de tamanho, cor e estilo da 
+fonte.</p>
+<p style="text-align:center;">
+<img src="https://c.mql5.com/18/89/entradas-v101.png" width="568" height="103" title="Inputs v1.01" alt="Inputs v1.01" style="vertical-align:middle;"><br></p>
+
+
+<div>
+    <br> 
+</div>
+
+
+<ul></ul>
