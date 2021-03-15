@@ -33,5 +33,25 @@
 
   É recomendável utilizar neste modo “On Price” uma fonte menor do que no modo “Big Number”.
 
+### v. 02.00
+- Alteração da estratégia de implementação, agora utilizando programação orientada a objetos;
+- Extração do funcionamento do relógio para uma biblioteca, que pode ser utilizada separadamente;
+- Correção de bugs.
+
+#### **Métodos da biblioteca:**
+
+**GetCountdownValue**  - Retorna o valor da contagem regressiva em uma string;
+
+**CountdownUpdate** - Atualiza a variável interna que armazena o valor da contagem regressiva e atualiza os tipos de exibição que estão sendo utilizados ("comment", "big number" e "on price");
+
+**CreateBigNumber** - Cria e configura a label do big number;
+
+**CreateComment** - Inicializa a exibição do tipo comment
+
+**CreateOnPrice** - Cria e configura a label do On Price
+
+
+
+
 
   
