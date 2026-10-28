@@ -55,3 +55,16 @@
 
 
   
+
+### v. 02.01
+
+- Biblioteca `CandleClock.mqh` autocontida: não depende mais de `MQL5Simplify/Graphic.mqh` (o validador do Code Base só compila os arquivos anexados);
+- Timer de 1 s (`OnTimer`): o relógio continua contando mesmo sem ticks, usando `TimeTradeServer()`;
+- Objetos criados uma única vez no `OnInit` (antes eram recriados a cada tick);
+- Contagem nunca fica negativa; acima de 24 h mostra os dias (`1d 03:12:45`); MN1 usa o mês de calendário;
+- "On price" se reposiciona ao rolar/zoom do gráfico (`CHARTEVENT_CHART_CHANGE`);
+- `#property indicator_plots 0`, `#property link` com URL e variáveis sem uso removidas: compila com 0 erros e 0 avisos.
+
+#### Publicação no Code Base
+
+Anexar os dois arquivos: `CandleCountdown.mq5` (local **Default**) e `Include/CandleClock.mqh` (local **<MQL5\Include> directory**).
